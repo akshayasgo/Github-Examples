@@ -1,6 +1,10 @@
 name: Greetings
 
-on: [pull_request_target, issues]
+on: 
+  push: 
+    branches:
+      - main # Specify branches where the action should run on push (replace 'main' with your desired branch)
+      - feature/* # Example for feature branches; you can adjust this as needed
 
 jobs:
   greeting:
